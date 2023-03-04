@@ -1,0 +1,54 @@
+h3 {
+  color:darkslateblue;
+  margin: 0.5rem;
+  font-size: 1.7rem;
+  font-family: monospace;
+}
+
+hr{
+  width: 70%;
+  margin-top: 3px;
+  margin-bottom: 0.8rem;
+
+}
+
+textarea {
+  width: 80%;
+  height:14rem;
+  text-align: center;
+  border-radius: 60px;
+  background-color:rgb(143, 139, 150);
+  color: #f0f8ff;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+textarea::placeholder{
+color:rgb(197, 190, 190);
+}
+
+.buttons {
+  width: 80%;
+  height: 5rem;
+  display: flex;  
+  justify-content: center;
+}
+
+p {
+  color: #0693d9;
+}
+
+.counter {
+  align-self: flex-end;
+  padding-right: 1rem;
+  color: greenyellow;
+}
+
+.btn-tweet {
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  background-color:rgb(148, 140, 202);
+  box-shadow: 4px 4px +1px ;
+}
+
