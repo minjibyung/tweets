@@ -3,30 +3,31 @@ import { ContainerTweet } from "./components/ContainerTweet/ContainerTweet"
 import { Tweet } from "./components/Tweet/Tweet";
 
 let tweets = [];
+
 function App() {
 
 const TA = useRef();
-const [message, setMessage] = useState("Aquí verás tu Tweet actual");
+const [message, setMessage] = useState("Aquí verás tu Tweet actual")
 const [counter, setCounter] = useState(255);
 const [styleCounter, setStyleCounter] = useState("counter");
 const [tweetList, setTweetList] = useState([]);
 
 const getMessage = () => {
-setMessage(TA.current.value);
+setMessage(TA.current.value)
 setCounter(255 - TA.current.value.length);
-if (counter <= 0) {
-setStyleCounter("counter-red");
-} else {
-setStyleCounter("counter");
-}
+// if (counter <= 0) {
+// setStyleCounter("counter-red");
+// } else {
+// setStyleCounter("counter");
+// }
 }
 
 const handleSendTweet = () => {
 const newTweet = { message };
 tweets.push(newTweet);
 setTweetList([...tweetList, newTweet]);
-setMessage("");
-setCounter(255);
+setMessage("Tweet publicado");
+setCounter(0);
 TA.current.value = '';
 }
 
@@ -42,7 +43,7 @@ return (
 <div className="App">
 <h1>Generador De Tweets</h1>
 <ContainerTweet
-contain={
+contain = {
 <Tweet
 eventTweet={handleSendTweet}
 refTextArea={TA}

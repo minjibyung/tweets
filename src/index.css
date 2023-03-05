@@ -72,24 +72,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto;
 }
-
-.btn-clear {
-  width: 12rem;
-  height: 2.5rem;
-  background-color: #65b0fb;
-  color: #eaebf0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn-clear:hover {
-  color: violet;
-  background-color: #03034d;
-  box-shadow: 0 0 5px violet;
-  font-weight: 800;
-}
-
 .counter {
   color: #1dd91d;
   font-size: 1rem;

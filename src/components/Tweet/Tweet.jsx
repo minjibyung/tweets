@@ -16,7 +16,7 @@ export const Tweet = ({ styleCounter, counter, eventMessage, eventArea, eventTwe
     />
     <div className="buttons">
       <button onClick={eventTweet} className='btn-tweet'>Publicar</button>
-      <button onClick={eventFile} className='btn-tweet'>Mostrar Tweets</button>
+      <button onClick={eventList} className='btn-tweet'>Mostrar Tweets</button>
     </div>
     <p className= {styleCounter}>{counter}</p>
     <span>{ eventArea }</span>    
